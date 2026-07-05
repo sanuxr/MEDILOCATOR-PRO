@@ -1,16 +1,34 @@
-# React + Vite
+# MEDILOCATOR PRO - Real-Time Hospital Finder System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+MEDILOCATOR PRO Live is a responsive, single-page web application designed to help users instantly locate the nearest hospitals relative to their real-time GPS coordinates. Built as a full-stack frontend prototype, the system transitions away from static "as-the-crow-flies" mathematical distances to deliver true, live-traffic driving durations and ETAs by leveraging official Google Maps cloud services.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic GPS Tracking:** Integrates the browser's native HTML5 Geolocation API to instantly lock onto user device coordinates. Falls back gracefully to a regional city center (Mumbai, MH) if permissions are restricted.
+- **Live Medical Asset Discovery:** Leverages the **Google Places Service API** to perform an on-demand spatial query within a 10km grid radius to find legitimate surrounding hospitals.
+- **Traffic-Aware Matrix Routing:** Passes candidate coordinates directly through the **Google Distance Matrix API** using real-time predictive traffic modeling (`BEST_GUESS`) to output true driving lengths and timelines.
+- **Interactive Geovisual UI:** Automatically scales and renders custom interactive markers on a live map layout. Clicking on maps pins or matching dashboard list cards triggers rich-data info overlays.
+- **Modern Fluid Layout:** Styled natively with Tailwind CSS for a clean, accessible desktop and mobile-responsive interface.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Architecture:** Vanilla JavaScript (ES6+), HTML5, CSS3
+- **Design System Framework:** Tailwind CSS
+- **Mapping & GIS Engines:** - Google Maps JavaScript API
+  - Google Places API
+  - Google Distance Matrix API
 
-## Expanding the Oxlint configuration
+## 🏁 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+To run this prototype locally on your computer, follow these simple setup steps:
+
+### Prerequisites
+You will need a valid **Google Cloud Console API Key** with the following APIs enabled:
+1. Maps JavaScript API
+2. Places API
+3. Distance Matrix API
+
+### Installation & Execution
+1. Clone this repository or download the source code:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
