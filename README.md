@@ -31,4 +31,4 @@ You will need a valid **Google Cloud Console API Key** with the following APIs e
 ### Installation & Execution
 1. Clone this repository or download the source code:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+   git clone [https://github.com/https://github.com/sanuxr/MEDILOCATOR-PRO.git](https://github.com/sanuxr/MEDILOCATOR-PRO.git)
